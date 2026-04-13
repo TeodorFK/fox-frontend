@@ -1,0 +1,20 @@
+<%- include('./partials/head') %>
+
+<body>
+  <div>
+    <section>
+      <img src="<%= randomFox1.data %>" alt="Cute fox" />
+      <form action="/votes/<%= randomFox1.data._id %>" method="post">
+        <input type="hidden" name="value" value="1" />
+        <button type="submit">Vote</button>
+      </form>
+    </section>
+    <section>
+      <img src="<%= randomFox2.data %>" alt="Also Cute fox" />
+      <form action="/votes/<%= randomFox2.data._id %>" method="post">
+        <input type="hidden" name="value" value="1" />
+        <button type="submit">Vote</button>
+      </form>
+    </section>
+  </div>
+</body>
