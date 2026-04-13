@@ -3,6 +3,6 @@ const controller = require('../controller/controller');
 
 router.get('/', controller.index);
 
-router.post('/votes/:foxId', controller.sendVote);
+router.post('/score/:foxId', controller.sendScore);
 
 module.exports = router;

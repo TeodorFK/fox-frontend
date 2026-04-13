@@ -1,17 +1,21 @@
 <%- include('./partials/head') %>
 
 <body>
+  <h1>Welcome</h1>
+  <h2>Who do you think is the cutest?</h2>
   <div>
     <section>
-      <img src="<%= randomFox1.data %>" alt="Cute fox" />
-      <form action="/votes/<%= randomFox1.data._id %>" method="post">
+      <img src="<%= randomFox1.data.foxImage %>" alt="Cute fox" />
+      <p><%= randomFox1.data.score %></p>
+      <form action="/score/<%= randomFox1.data._id %>" method="post">
         <input type="hidden" name="value" value="1" />
         <button type="submit">Vote</button>
       </form>
     </section>
     <section>
-      <img src="<%= randomFox2.data %>" alt="Also Cute fox" />
-      <form action="/votes/<%= randomFox2.data._id %>" method="post">
+      <img src="<%= randomFox2.data.foxImage %>" alt="Also Cute fox" />
+      <p><%= randomFox2.data.score %></p>
+      <form action="/score/<%= randomFox2.data._id %>" method="post">
         <input type="hidden" name="value" value="1" />
         <button type="submit">Vote</button>
       </form>

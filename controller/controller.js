@@ -11,10 +11,10 @@ const index = async (req, res) => {
   }
 };
 
-const sendVote = async (req, res) => {
+const sendScore = async (req, res) => {
   try {
     const foxId = req.params.foxId;
-    const result = await axios.post(`http://10.12.5.12/4000/votes/${foxId}`);
+    const result = await axios.post(`http://10.12.5.12:4000/score/${foxId}`);
     console.log(result);
     res.redirect('/');
   } catch (err) {
@@ -24,5 +24,5 @@ const sendVote = async (req, res) => {
 
 module.exports = {
   index,
-  sendVote,
+  sendScore,
 };
