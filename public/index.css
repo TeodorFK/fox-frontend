@@ -1,0 +1,37 @@
+body {
+  background-color: beige;
+  text-align: center;
+}
+body img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 2vh;
+}
+.vs {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  justify-content: center;
+  gap: 20px;
+}
+section {
+  width: 35%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.fox1 {
+  background-color: rgb(88, 192, 234);
+  text-align: center;
+}
+.fox2 {
+  background-color: rgb(249, 68, 68);
+  text-align: center;
+}
+button {
+  border-radius: 1vh;
+  border-style: none;
+  height: 5vh;
+  width: 7vw;
+  cursor: pointer;
+}
